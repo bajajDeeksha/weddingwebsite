@@ -1,5 +1,5 @@
 <?php
-// add check date !
+
 $name = strip_tags(htmlspecialchars($_POST['name']));
 $email_address = strip_tags(htmlspecialchars($_POST['email']));
 $number = strip_tags(htmlspecialchars($_POST['number']));
@@ -19,15 +19,19 @@ if($message === ""){
 }
 $us_headers = "From: noreply@nishandgeet.com\n";
 $us_headers .= "Reply-To: $email_address";
-if (!mail($us_email,$us_subject,$us_body,$us_headers)) {
+$us = mail($us_email,$us_subject,$us_body,$us_headers);
+if ($us != 1) {
     echo "error";
 } else {
     $they_email= $email_address;
     $they_subject= "Nish and Geetika wedding - ThankYou";
-    $they_body="Hi $name,\nThank you for being a part of our special occasion.\nSee you on  21.12.16\nBest Wishes,\nNishyanth and Geetika";
+    $they_body="Hi $name,\nThank you for being a part of our special occasion.\nSee you on 21.12.16\nBest Wishes,\nNishyanth and Geetika";
     $they_headers = "From: noreply@nishandgeet.com\n";
     $they_headers .= "Reply-To: $us_email";
-    mail($they_email,$they_subject,$they_body,$they_headers);
+    $they = mail($they_email,$they_subject,$they_body,$they_headers);
+    if ($they != 1) {
+        echo "error";
+    } else 
     echo "success";
 }
 ?>
