@@ -1,0 +1,249 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Save the Date - Nish$Geet </title>
+<meta name="description" content="Nish&Geet Wedding Invitation">
+<meta name="author" content="Bajaj Deeksha">
+
+<!-- ViewPort Setting -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Google fonts -->
+<link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=BenchNine:700' rel='stylesheet' type='text/css'>
+
+<link rel="icon" type="image/png" href="images/gn.png" />    
+    
+<!--   main stylesheet  -->
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+<link id="colors" rel="stylesheet" href="css/colors.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/fa/css/font-awesome.min.css">
+<script >
+    // iOS viewport scaling bug fix
+    (function(doc) {
+    var addEvent = 'addEventListener',
+        type = 'gesturestart',
+        qsa = 'querySelectorAll',
+        scales = [1, 1],
+        meta = qsa in doc ? doc[qsa]('meta[name=viewport]') : [];
+
+    function fix() {
+        meta.content = 'width=device-width,minimum-scale=' + scales[0] + ',maximum-scale=' + scales[1];
+        doc.removeEventListener(type, fix, true);
+    }
+
+    if ((meta = meta[meta.length - 1]) && addEvent in doc) {
+        fix();
+        scales = [.25, 1.6];
+        doc[addEvent](type, fix, true);
+    }
+    }(document));
+</script>
+
+<!-- custom modernizr build -->
+<script src="javascript/Modernizr.js"></script> 
+<!-- jQuery-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<!-- GoogleMaps, photo gallery and slider -->
+<script src="javascript/libraries-ck.js"></script>
+<!-- custom js class -->
+<script src="javascript/save_the_date-ck.js"></script>
+    
+<!-- SETTINGS STARTS -->
+<script>
+$(document).ready(function() {
+	// init Save the Date
+	save_the_date.init({
+		weddingDate: "2016/12/21, 11:00", 
+		//Date : enter your wedding date
+    labels: ["days", "hours", "minutes", "secs"], 
+		//Array of strings : labels of time units
+		sendServerMessages: ["Thank you.", "Sorry, your message could not be sent due to an error."],
+		//Array of strings : Messages from the server on send
+		gallery : ["images/gallery/gallery1.jpg", "images/gallery/gallery2.jpg", "images/gallery/gallery3.jpg", "images/gallery/gallery4.jpg", "images/gallery/gallery5.jpg"],
+		//Array image pathes
+		//titles : ['Just us', 'Reception', 'Flowers we chose', 'In the eyes'],
+		//Array of strings : corresponding titles
+		});	
+});
+</script>
+<!-- SETTINGS ENDS -->
+
+</head>
+<body  id="top">
+	
+	<!--- NAVIGATION STARTS -->
+	<div class="nav-container">
+		<div class="nav">
+			<a  id="full-menu" href="#">&equiv;</a>
+			<a class="active to-scroll" href="#top">Home</a>
+			<a class="to-scroll" href="#about">About Us</a>
+			<a class="to-scroll" href="#ceremony">Ceremony</a>
+			<a href="#" id="gallery">Gallery</a>
+			<a class="to-scroll" href="#rsvp">R.S.V.P.</a>
+			<div class="effect"></div>
+		</div>
+	</div>
+    
+	<!-- HEADER STARTS -->
+	<header class="header" role="banner">
+        <h1 class="wrapper"><span>Nishyanth</span> & <span>Geetika</span></h1>
+        <div class="images">
+            <span class="him pile"></span><span class="her pile"></span>
+        </div> 
+        <h2>
+            <span class="event">are getting married...</span>
+            <span class="date">21.12.2016</span>
+            <span id="timer" class="timer"></span>
+        </h2>		
+	</header>	
+	
+	<!--- MAIN CONTENT STARTS -->
+	<div class="content">
+        <!-- ABOUT SECTION STARTS -->
+        <section id="about" class="about clearfix">
+            <div class="he">
+                <p>
+                My name’s <strong>Nishyanth</strong>, but people generally call me Nish. I was born in Hyderabad - the best place on earth !! I work as an OMS engineer during the week, try to go on road trips on the weekends. I love travelling, reading, driving, biryani and of course HER &nbsp &nbsp &nbsp<i class="fa fa-hand-o-right" aria-hidden="true"></i> 
+                </p>
+            </div>
+            <div class="she">
+                <p>
+                    <strong>Geetika</strong> - that’s me ! I am a software engineer by profession but am on a break from work currently to enjoy life ! 
+Having been born in the family who loves travelling, I’ve visited most of the places across country and still have my looong ’travel bucket list’ to check. I love painting, being creative, Disney (loooove it), reading, beaches, watching F.R.I.E.N.D.S again and again and again… and of course now HIM &nbsp &nbsp &nbsp <i class="fa fa-hand-o-left" aria-hidden="true"></i> 
+                    </p>
+            </div>
+            
+            <div class="they">
+                <p>Depending on who you ask, you’ll hear a different story of how we met and fell in love. For us, it went from being friends - to something more special. Our compatibility and understanding made us realise that we would make the perfect <strong>US</strong>.</br>
+
+Neither of us are perfect but we are perfect for eachother. We are Happy Together and will be as long as we are together!</br>
+
+            <strong><a href="https://www.youtube.com/watch?v=9ZEURntrQOg&feature=youtu.be" target="_blank"><i><u>This</u></i></a></strong> &nbspis what will perfectly describe us.</p>
+        </div>
+    </section>
+
+        <!-- CEREMONY SECTION STARTS -->
+        <section  id="ceremony" class="flex-container ceremony">
+            <div class="flexslider">
+                <ul class="slides">
+                    <li class="fixed" style="background-image:url(images/carousel/slide0.jpg);"></li>
+                    <li class="fixed" style="background-image:url(images/carousel/slide1.jpg);"></li>
+                    <li class="fixed" style="background-image:url(images/carousel/slide2.jpg);"></li>
+                    <li class="fixed" style="background-image:url(images/carousel/slide3.jpg);"></li>
+                    <li class="fixed" style="background-image:url(images/carousel/slide4.jpg);"></li>
+                </ul>
+            </div>
+
+            <div class="wrapper clearfix">
+                <h2 class="title"> Mumbai </h2>
+                <div class="ceremony-1">
+                    <span class="image pile">
+                        <img src="images/sangeet.jpg" class="ceremony-img" alt="sangeet">
+                    </span>
+                    <h3>Mata ki Chowki/Sangeet</h3>
+                    <p>5:00 PM</p>
+                    <p>20th December, 2016</p>
+                    <p>Hotel Fortune Select Exotica, Vashi</p>
+                </div>
+                <div class="ceremony-2">
+                    <span class="image pile">
+                        <img src="images/wedding.jpg" class="ceremony-img" alt="shadi">
+                    </span>
+                    <h3>Shaadi</h3>
+                    <p>7:30 PM</p>
+                    <p>21th December, 2016</p>
+                    <p>Hotel Fortune Select Exotica, Vashi</p>
+                </div>
+            </div>
+            <div  class="wrapper clearfix">
+                <h2 class="title"> Hyderabad </h2>
+                <div class="ceremony-1">
+                    <span class="image pile">
+                        <img src="images/pooja.jpg" class="ceremony-img" alt="pooja">
+                    </span>
+                    <h3>Sai Baba Bhajan</h3>
+                    <p>5:00 PM</p>
+                    <p>24th December, 2016</p>
+                    <p>Nish ka Ghar<br/>Plot No: 52, Chikoti Garden, Begumpet</p>
+
+                </div>
+                <div class="ceremony-2">
+                    <span class="image pile">
+                        <img src="images/reception.jpg" class="ceremony-img" alt="Reception">
+                    </span>
+                    <h3>Reception</h3>
+                    <p>7:30 PM</p>
+                    <p>25th December, 2016</p>
+                    <p>Hotel Avasa<br/>Plot No. 15, Sector 1, Madhapur</p>    		
+                </div>
+            </div>
+</section>
+
+        <!--- RSVP STARTS -->
+        <section id="rsvp" class="contact">
+            <h2 class="title">R.S.V.P.</h2>
+            <div class="wrapper">
+                <div id="note">
+                    <p>We look forward to celebrating with you.</p> 
+                </div>
+                <form action="#" method="post">
+                    <fieldset>
+                        <h3>Will you be attending at the events?</h3>
+                        <div id="oii"></div>
+                        <div class="checkbox">
+                            <input value="Sangeet" type="checkbox" name="ceremony[]" id="check-sangeet" >
+                            <label for="check-sangeet">Sangeet/Mata ki Chowki in Mumbai</label>
+                        </div>
+                        <div class="checkbox">
+                            <input value="Wedding" type="checkbox" name="ceremony[]" id="check-wedding" >
+                            <label for="check-wedding">Wedding in Mumbai</label>
+                        </div>
+                        <div class="checkbox">
+                            <input value="Bhajan" type="checkbox" name="ceremony[]" id="check-pooja" >
+                            <label for="check-pooja">Bhajan Sandhya in Hyderabad </label>
+                        </div>
+                        <div class="checkbox">
+                            <input value="Reception" type="checkbox" name="ceremony[]" id="check-reception" >
+                            <label for="check-reception">Reception in Hyderabad</label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <h3>Personal Informations:</h3>
+                        <input type="text" id="name" name="name" placeholder="Your Name">
+                        <input type="number" min="1" id="number" name="number" placeholder="Number of people attending">
+                        <input type="email" id="email" name="email" placeholder="Your E-mail">
+                        <textarea name="message" class="form-message" id="message" placeholder="Want to drop us a line ?"></textarea>
+                    </fieldset>
+                    <input type="submit" class="submit" id="send" value="send">
+                </form>
+                <h3>Or contact us directly:</h3>
+                <div class="contact-details contact-details-1">
+                    <h4>Geetika</h4>
+                    <p>+91-9019695967</p>
+                    <p>
+                        <a href="mailto:geetbajaj20@gmail.comsubject=RSVP">geetbajaj20@gmail.com</a>
+                    </p>
+                </div>
+                <div class="contact-details contact-details-2">
+                    <h4>Nish</h4>
+                    <p>+1(571)225-7710</p>
+                    <p>
+                        <a href="mailto:nishyanth@yahoo.com?subject=RSVP">nishyanth@yahoo.com</a>
+                    </p>
+                </div>
+            </div>
+</section>
+			
+        <!-- FOOTER STARTS -->
+        <footer id="footer">	
+            <p class="copyright"> &copy; 2016 <a href="#"> Nish and Geet Wedding invitation </a> All rights reserved.</p>
+        </footer>	
+    </div>
+		
+</body>
+</html>
