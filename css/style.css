@@ -270,18 +270,6 @@ h4 {
 .header .images span.him {
     background-position: top right
 }
-.header .images:hover .him {
-    background-position: bottom right
-}
-.header .images:hover .her {
-    background-position: bottom left
-}
-.header .images:hover .him:hover {
-    background-position: top right
-}
-.header .images:hover .her:hover {
-    background-position: top left
-}
 .header h2 {
     position: relative;
     -webkit-box-sizing: border-box;
